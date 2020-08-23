@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PUO-dP-YxE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WU3-du-CCt">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -7,38 +7,114 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Gyroscope-->
+        <scene sceneID="c1L-7i-bno">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Sense_Insight" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="35T-Vw-vYU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O7e-q9-lZi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="KR7-73-8TF"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="bLr-Y1-S0L"/>
+                    <tabBarItem key="tabBarItem" title="Gyroscope" image="pencil.circle.fill" catalog="system" id="HHh-qE-IYd"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ocN-cd-LKh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="113.83928571428571"/>
+            <point key="canvasLocation" x="-1352" y="228"/>
+        </scene>
+        <!--Accelerometer-->
+        <scene sceneID="Xom-AA-XZb">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DVw-Rq-c6f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="9dG-6K-xoP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I5d-cF-bnq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="mQA-Tr-9e8"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Accelerometer" image="arkit" catalog="system" id="5cY-8g-zlm"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-2158" y="228"/>
         </scene>
         <!--Tab Bar Controller-->
-        <scene sceneID="g2n-6W-sdl">
+        <scene sceneID="P3r-rX-uxP">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="PUO-dP-YxE" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="H4U-Mb-mZS">
+                <tabBarController id="WU3-du-CCt" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Nln-bk-VRn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="6Py-Fl-z3h"/>
+                        <segue destination="9dG-6K-xoP" kind="relationship" relationship="viewControllers" id="2w9-mA-Atg"/>
+                        <segue destination="35T-Vw-vYU" kind="relationship" relationship="viewControllers" id="i8a-Ko-dYw"/>
+                        <segue destination="pzH-P7-O2y" kind="relationship" relationship="viewControllers" id="rhM-N0-S8E"/>
+                        <segue destination="kHh-i4-GpW" kind="relationship" relationship="viewControllers" id="uAI-Gg-vK2"/>
                     </connections>
                 </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xmf-Ru-qwy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CMC-hq-6Kt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="113.83928571428571"/>
+            <point key="canvasLocation" x="-1739" y="-500"/>
+        </scene>
+        <!--Magnetometer-->
+        <scene sceneID="oKh-pr-rEc">
+            <objects>
+                <viewController id="pzH-P7-O2y" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dyD-xt-x0X">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="4G9-rP-Xg5"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Magnetometer" image="memories" catalog="system" id="9LE-gO-iOi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jQr-JJ-wEn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-542" y="228"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="pUT-zo-IzH">
+            <objects>
+                <viewController id="e49-ix-qFH" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V6p-hQ-cH5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="NB1-RH-VPS"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="eqf-m2-0zR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EXA-7o-LIC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-58" y="-500"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="rVf-xJ-qPT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kHh-i4-GpW" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Settings" image="gear" catalog="system" id="6Du-Pp-mik"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5rR-ra-JgF">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="e49-ix-qFH" kind="relationship" relationship="rootViewController" id="xqy-pR-Ud2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GBW-SN-tIw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-972" y="-500"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="arkit" catalog="system" width="128" height="128"/>
+        <image name="gear" catalog="system" width="128" height="119"/>
+        <image name="memories" catalog="system" width="128" height="107"/>
+        <image name="pencil.circle.fill" catalog="system" width="128" height="121"/>
+    </resources>
 </document>

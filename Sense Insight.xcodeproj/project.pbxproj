@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		E204E3ED24E41AD40026B64E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E204E3EC24E41AD40026B64E /* AppDelegate.swift */; };
 		E204E3EF24E41AD40026B64E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E204E3EE24E41AD40026B64E /* SceneDelegate.swift */; };
-		E204E3F124E41AD40026B64E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E204E3F024E41AD40026B64E /* ViewController.swift */; };
 		E204E3F424E41AD40026B64E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E204E3F224E41AD40026B64E /* Main.storyboard */; };
 		E204E3F624E41AD60026B64E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E204E3F524E41AD60026B64E /* Assets.xcassets */; };
 		E204E3F924E41AD60026B64E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E204E3F724E41AD60026B64E /* LaunchScreen.storyboard */; };
@@ -20,7 +19,6 @@
 		E204E3E924E41AD40026B64E /* Sense Insight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sense Insight.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E204E3EC24E41AD40026B64E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E204E3EE24E41AD40026B64E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E204E3F024E41AD40026B64E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E204E3F324E41AD40026B64E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E204E3F524E41AD60026B64E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E204E3F824E41AD60026B64E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,7 +58,6 @@
 			children = (
 				E204E3EC24E41AD40026B64E /* AppDelegate.swift */,
 				E204E3EE24E41AD40026B64E /* SceneDelegate.swift */,
-				E204E3F024E41AD40026B64E /* ViewController.swift */,
 				E2DF093E24F2350B0038D913 /* gyroscope.swift */,
 				E204E3F224E41AD40026B64E /* Main.storyboard */,
 				E204E3F524E41AD60026B64E /* Assets.xcassets */,
@@ -141,7 +138,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E204E3F124E41AD40026B64E /* ViewController.swift in Sources */,
 				E2DF093F24F2350B0038D913 /* gyroscope.swift in Sources */,
 				E204E3ED24E41AD40026B64E /* AppDelegate.swift in Sources */,
 				E204E3EF24E41AD40026B64E /* SceneDelegate.swift in Sources */,
